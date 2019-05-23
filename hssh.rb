@@ -2,9 +2,9 @@
 class Hssh < Formula
   desc ""
   homepage ""
-  url "https://github.com/squarescale/hssh/releases/download/v0.0.7/hssh_0.0.7_darwin_amd64.tar.gz"
-  version "0.0.7"
-  sha256 "ceed82f560e6ec70593d1d397bb1e028221478429491c1bac6a3b5521c24d20c"
+  url "https://github.com/squarescale/hssh/releases/download/v0.0.8/hssh_0.0.8_darwin_amd64.tar.gz"
+  version "0.0.8"
+  sha256 "a4aaf43d574c4ebe50ce368db10ffcc2c39e13d7ed324929231fa01291a70b6e"
 
   def install
     bin.install "hssh"
