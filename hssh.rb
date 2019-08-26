@@ -2,14 +2,17 @@
 class Hssh < Formula
   desc ""
   homepage ""
-  version "0.0.9"
+  version "0.1.0"
+  bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/squarescale/hssh/releases/download/v0.0.9/hssh_0.0.9_darwin_amd64.tar.gz"
-    sha256 "40d474e7ff6ff6b3865f3b47c46b6aed54647350be71cc5402af901f229cfdc9"
+    url "https://github.com/squarescale/hssh/releases/download/v0.1.0/hssh_0.1.0_darwin_amd64.tar.gz"
+    sha256 "a26f40a4e25476a9dacb5545fe54f40738f3f01fa5a0e924d251d2bab62018dc"
   elsif OS.linux?
-    url "https://github.com/squarescale/hssh/releases/download/v0.0.9/hssh_0.0.9_linux_amd64.tar.gz"
-    sha256 "02c096824d49ce3531e5ddc4dfc4b0acbdaad3c7aeaa021e1aded85d6c2c525c"
+    if Hardware::CPU.intel?
+      url "https://github.com/squarescale/hssh/releases/download/v0.1.0/hssh_0.1.0_linux_amd64.tar.gz"
+      sha256 "49dc11ebaed55a9579748e3ed98d386f3c8edd41083732b775854413c9ba897a"
+    end
   end
 
   def install
