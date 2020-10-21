@@ -2,24 +2,24 @@
 class Hssh < Formula
   desc ""
   homepage ""
-  version "0.1.8"
+  version "0.2.3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/squarescale/hssh/releases/download/v0.1.8/hssh_Darwin_x86_64.tar.gz"
-    sha256 "84d90582fec5d5ca646e3084f8a2a6aaa28dd4fc6dae42fb3879baee3453ef25"
+    url "https://github.com/squarescale/hssh/releases/download/v0.2.3/hssh_Darwin_x86_64.tar.gz"
+    sha256 "c779305801eeec1640467559b308269f2e0d26add4a68e4719135169ba9ec516"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/squarescale/hssh/releases/download/v0.1.8/hssh_Linux_x86_64.tar.gz"
-      sha256 "97a79a174975ef019f5cca8292e3fe021cb1365c0d0fb5edc99dad79dc9532ac"
+      url "https://github.com/squarescale/hssh/releases/download/v0.2.3/hssh_Linux_x86_64.tar.gz"
+      sha256 "92fb33fa3e5744f2b962d4e8aa91136ed53cad876a2430dc8f397540ff2ce1e1"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/squarescale/hssh/releases/download/v0.1.8/hssh_Linux_arm64.tar.gz"
-        sha256 "e3e8aa4057f08124585556e15531db38b35b22220bfcd0c30a6b2a48fba726bc"
+        url "https://github.com/squarescale/hssh/releases/download/v0.2.3/hssh_Linux_arm64.tar.gz"
+        sha256 "aac1e38ccdaddc78a3386523a3778c52a044d252e400a4326be1aa6d221a3e73"
       else
-        url "https://github.com/squarescale/hssh/releases/download/v0.1.8/hssh_Linux_armv6.tar.gz"
-        sha256 "9339de69086da4e3e88c5291ab74fab23152932f5707c3b79ee3924aae34829f"
+        url "https://github.com/squarescale/hssh/releases/download/v0.2.3/hssh_Linux_armv6.tar.gz"
+        sha256 "422a5e5a9619edb1d4aa4a6ad1d0c04a1f2c152f19e909a1619243e66213beb1"
       end
     end
   end
