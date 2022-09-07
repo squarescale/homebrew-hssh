@@ -5,20 +5,20 @@
 class Hssh < Formula
   desc ""
   homepage ""
-  version "0.3.2"
+  version "0.3.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/squarescale/hssh/releases/download/v0.3.2/hssh_Darwin_x86_64.tar.gz"
-      sha256 "3682d665c9258d3e78db259f6f85cd04e4d279b6488fdb519c50f1fc17a80183"
+      url "https://github.com/squarescale/hssh/releases/download/v0.3.3/hssh_Darwin_x86_64.tar.gz"
+      sha256 "f0da423dc66463577ea39365e4b7fc1493dd87acbf0b6db58dce5a1e93a7a68e"
 
       def install
         bin.install "hssh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/squarescale/hssh/releases/download/v0.3.2/hssh_Darwin_arm64.tar.gz"
-      sha256 "2c5fa1827cd8af2fe81fee595d3e19802328bc61ad1baf446bd37a05cdf031a9"
+      url "https://github.com/squarescale/hssh/releases/download/v0.3.3/hssh_Darwin_arm64.tar.gz"
+      sha256 "7d681ff3364f30b55b55b457d0d0a41821ac14735bbbc8a6a339924b8df2f7b6"
 
       def install
         bin.install "hssh"
@@ -28,24 +28,24 @@ class Hssh < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/squarescale/hssh/releases/download/v0.3.2/hssh_Linux_armv6.tar.gz"
-      sha256 "24a08aeecef99011db491ae58f92e2043dc31d241f73faa1e0d07d3e1c9961db"
+      url "https://github.com/squarescale/hssh/releases/download/v0.3.3/hssh_Linux_armv6.tar.gz"
+      sha256 "dbdeb21792bfc9c33b32c2fd5a68515da6ec20b556738c242e33f7649ae0724d"
 
       def install
         bin.install "hssh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/squarescale/hssh/releases/download/v0.3.2/hssh_Linux_arm64.tar.gz"
-      sha256 "d92fb03d12d6ac04571b5eab67d22b53416ebe4407a677d8c08cbb692f5be83a"
+      url "https://github.com/squarescale/hssh/releases/download/v0.3.3/hssh_Linux_arm64.tar.gz"
+      sha256 "13301182f99d9759f2b3e84de9c1e3dcbe09722fb23769bc4eba29c4faac0b6b"
 
       def install
         bin.install "hssh"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/squarescale/hssh/releases/download/v0.3.2/hssh_Linux_x86_64.tar.gz"
-      sha256 "102a6a3198fda0708a679c729c48473b2e21a3f93b3b2448fcbebe59cb35179b"
+      url "https://github.com/squarescale/hssh/releases/download/v0.3.3/hssh_Linux_x86_64.tar.gz"
+      sha256 "c2920e9a45d8dd1ba7c6d9f8e4499532034636604e5b909e168902b31828c5cf"
 
       def install
         bin.install "hssh"
